@@ -4,17 +4,17 @@ document.getElementById('button-add-money').addEventListener('click', function(e
     event.preventDefault();
     const addMoney = document.getElementById('add-money-input').value;
     const pinNumber = document.getElementById('pin-number-input').value;
-    console.log(addMoney);
-    console.log(pinNumber);
+    // console.log(addMoney);
+    // console.log(pinNumber);
 
     if (pinNumber === '1234') {
         // Get the Current Balance
         const balance = document.getElementById('account-balance').innerText;
-        console.log(balance);
+        // console.log(balance);
         const addMoneyNumber = parseFloat(addMoney);
         const balanceNumber = parseFloat(balance);
         const newBalance = addMoneyNumber+balanceNumber;
-        console.log(newBalance);
+        // console.log(newBalance);
 
         // Update balance
         document.getElementById('account-balance').innerText = newBalance;
